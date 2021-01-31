@@ -1,4 +1,4 @@
-#Fraud Detection Regression Analysis with R
+Fraud Detection Regression Analysis with R
 
 Financial fraud is an ever-growing metus in the financial industry. Credit card frauds are easy and friendly targets.
 Data mining had played an important role in the detection of credit card fraud in online transactions. Credit card fraud detection, which is a data mining problem, becomes challenging due to two major reasons - first, the profiles of normal and fraudulent behaviors change constantly, and secondly, credit card fraud data sets are highly skewed. 

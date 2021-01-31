@@ -20,6 +20,8 @@ ggplot(data = creditcard,aes(x=V1,y=V2,col=as.factor(Class)))+
   theme_bw()+
   scale_color_manual(values = c('dodgerblue2','red'))
 ##############################
+
+# You can download the dataset via the given link: https://www.kaggle.com/mlg-ulb/creditcardfraud
 #creditcard.csv file will use just 50000 rows instead of 284775 for handle performance problem.
 
 creditcard <- read.csv("C:/Users/Gulsev/Desktop/ACM514 FINAL PROJECT/creditcard.csv",nrows =50000  ,header=TRUE)

@@ -8,6 +8,8 @@ library(ROSE)
 library(smotefamily)
 library(pROC)
 ###########################
+
+# You can download the dataset via the given link: https://www.kaggle.com/mlg-ulb/creditcardfraud
 creditcard <- read.csv("C:/Users/Gulsev/Desktop/ACM514 FINAL PROJECT/creditcard.csv",nrows = 50000, header=TRUE)
 View(creditcard)
 nrow(creditcard)

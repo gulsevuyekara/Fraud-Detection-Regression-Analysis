@@ -11,6 +11,7 @@ library(corrplot)
 ##########################################################
 
 # Import creditcart.csv data and viewed detail of dataset.
+# You can download the dataset via the given link: https://www.kaggle.com/mlg-ulb/creditcardfraud
 creditcard <- read.csv("C:/Users/Gulsev/Desktop/ACM514 FINAL PROJECT/creditcard.csv", header=TRUE)
 View(creditcard)
 ###################################################################

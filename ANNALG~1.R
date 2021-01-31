@@ -1,4 +1,6 @@
 #ANN Algorithm 
+
+# You can download the dataset via the given link: https://www.kaggle.com/mlg-ulb/creditcardfraud
 creditcard <- read.csv("C:/Users/Gulsev/Desktop/ACM514 FINAL PROJECT/creditcard.csv",nrows =50000  ,header=TRUE)
 View(creditcard)
 row(creditcard)
@@ -65,7 +67,7 @@ plot(ANN_model)
 # Computing Predictions of the Model
 predANN=compute(ANN_model,test_data[,-31])
 
-resultANN=predANN$net.result # YSA'nin nümerik probability sonuclari
+resultANN=predANN$net.result # YSA'nin nÃ¼merik probability sonuclari
 
 head(resultANN)
 
@@ -143,7 +145,7 @@ plot(ANN_model)
 # Computing Predictions of the Model
 predANN=compute(ANN_model,test_data[,-31])
 
-resultANN=predANN$net.result # YSA'nin nümerik probability sonuclari
+resultANN=predANN$net.result # YSA'nin nÃ¼merik probability sonuclari
 
 head(resultANN)
 
@@ -215,7 +217,7 @@ plot(ANN_model)
 predANN=compute(ANN_model,test_data[,-31])
 
 
-resultANN=predANN$net.result # YSA'nin nümerik probability sonuclari
+resultANN=predANN$net.result # YSA'nin nÃ¼merik probability sonuclari
 
 head(resultANN)
 

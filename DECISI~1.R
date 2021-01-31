@@ -11,6 +11,8 @@ library(ggplot2)
 library(ROSE)
 library(smotefamily)
 ###########################
+
+# You can download the dataset via the given link: https://www.kaggle.com/mlg-ulb/creditcardfraud
 creditcard <- read.csv("C:/Users/Gulsev/Desktop/ACM514 FINAL PROJECT/creditcard.csv",nrows = 50000, header=TRUE)
 View(creditcard)
 nrow(creditcard)
@@ -58,8 +60,8 @@ table(undersampled_credit$Class)
 decisionTree_model <- rpart(Class ~ . ,undersampled_credit, method = 'class')
 predicted_value <- predict(decisionTree_model,test_data[,-31], type = 'class')
 rpart.plot(decisionTree_model,extra="auto",type=2,tweak=1)
-#burada söyle bir durum var decisionTree_model'i eger credit_smote_result ile denersem daha düsük çikiyor accuracy ve agaç dallanmiyor 
-#test_data ile deneyinde daha iyi çikiyor souç bu iki ayri durumun kodunu rapora ekle ve aciklamasini yap 
+#burada sÃ¶yle bir durum var decisionTree_model'i eger credit_smote_result ile denersem daha dÃ¼sÃ¼k Ã§ikiyor accuracy ve agaÃ§ dallanmiyor 
+#test_data ile deneyinde daha iyi Ã§ikiyor souÃ§ bu iki ayri durumun kodunu rapora ekle ve aciklamasini yap 
 #credit_smote_result
 summary(decisionTree_model)
 #-------
